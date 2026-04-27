@@ -1,7 +1,14 @@
+import Header from "../components/Header";
+
 export default function SiteLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    <>
+      <Header />
+      <main>{children}</main>
+    </>
+  );
 }

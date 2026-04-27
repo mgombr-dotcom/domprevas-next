@@ -84,7 +84,33 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="overflow-x-hidden bg-white text-black">
+  <main className="overflow-x-hidden bg-white text-black">
+
+    {/* HEADER */}
+    <header className="absolute left-0 top-0 z-50 w-full">
+      <div className="mx-auto flex max-w-[1540px] items-center justify-between px-12 py-6">
+        <img src="/logo.png" alt="DOM PRE VÁS" className="h-[58px] w-auto" />
+
+        <nav className="hidden items-center gap-8 text-[11px] font-black uppercase text-white lg:flex">
+          <a href="/">Domov</a>
+          <a href="/#projekty">Projekty</a>
+          <a href="/#sluzby">Služby</a>
+          <a href="/#realizacie">Realizácie</a>
+          <a href="/#onas">O nás</a>
+          <a href="/#kontakt">Kontakt</a>
+        </nav>
+
+        <div className="hidden items-center gap-7 text-white lg:flex">
+          <span className="text-[12px] font-semibold">☎ {cms.phone}</span>
+          <a
+            href="/#kontakt"
+            className="bg-red-600 px-7 py-4 text-[11px] font-black uppercase hover:bg-red-700"
+          >
+            Objednať projekt
+          </a>
+        </div>
+      </div>
+    </header>
 
       {/* HERO */}
       <section className="relative min-h-[900px] overflow-hidden text-white lg:min-h-[850px]">

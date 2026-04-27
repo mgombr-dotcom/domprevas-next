@@ -10,7 +10,7 @@ export default function Header() {
     <header className="absolute left-0 top-0 z-50 w-full">
       <div className="mx-auto flex max-w-[1540px] items-center justify-between px-6 py-5 lg:px-12 lg:py-6">
         <Link href="/" onClick={() => setOpen(false)}>
-          <img src="/logo.png" alt="DOM PRE VÁS" className="h-[50px] w-auto lg:h-[58px]" />
+          <img src="/logo-new.png" alt="DOM PRE VÁS" className="h-[50px] w-auto lg:h-[58px]" />
         </Link>
 
         <nav className="hidden items-center gap-8 text-[11px] font-black uppercase text-white lg:flex">

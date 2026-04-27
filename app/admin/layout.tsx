@@ -1,26 +1,33 @@
-export default function AdminLayout({
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+export const metadata: Metadata = {
+  title: "DOM PRE VÁS",
+  description: "Staviame vaše sny",
+};
+
+export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <div className="flex min-h-screen">
-      
-      {/* SIDEBAR */}
-      <aside className="w-64 bg-black text-white p-6">
-        <h2 className="text-xl font-bold mb-6">Admin</h2>
-
-        <nav className="flex flex-col gap-3">
-          <a href="/admin">Dashboard</a>
-          <a href="/admin/projekty">Projekty</a>
-        </nav>
-      </aside>
-
-      {/* CONTENT */}
-      <main className="flex-1 p-8 bg-gray-100">
-        {children}
-      </main>
-
-    </div>
+    <html
+      lang="sk"
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+    >
+      <body className="min-h-full">{children}</body>
+    </html>
   );
 }

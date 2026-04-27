@@ -6,14 +6,6 @@ export default function ProjectDetail() {
   return (
     <main className="bg-white text-black">
 
-      {/* HEADER */}
-      <header className="bg-black text-white px-8 py-6">
-        <div className="max-w-7xl mx-auto flex justify-between">
-          <img src="/logo.png" className="h-10" />
-          <Link href="/" className="text-sm">← Späť na homepage</Link>
-        </div>
-      </header>
-
       {/* HERO */}
       <section className="relative h-[500px]">
         <img src="/project-1.jpg" className="w-full h-full object-cover" />

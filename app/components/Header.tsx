@@ -14,12 +14,12 @@ export default function Header() {
         </Link>
 
         <nav className="hidden items-center gap-8 text-[11px] font-black uppercase text-white lg:flex">
-          <Link href="/">Domy</Link>
-          <Link href="/#projekty">Projekty</Link>
-          <Link href="/#sluzby">Služby</Link>
-          <Link href="/#realizacie">Realizácie</Link>
-          <Link href="/#onas">O nás</Link>
-          <Link href="/#kontakt">Kontakt</Link>
+<Link href="/">Domov</Link>
+<Link href="/projekty">Projekty</Link>
+<Link href="/sluzby">Služby</Link>
+<Link href="/realizacie">Realizácie</Link>
+<Link href="/o-nas">O nás</Link>
+<Link href="/kontakt">Kontakt</Link>
         </nav>
 
         <div className="hidden items-center gap-7 text-white lg:flex">
